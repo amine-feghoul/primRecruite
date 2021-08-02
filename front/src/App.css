@@ -1,0 +1,24 @@
+:root{
+  --lightBlue: #8ECAE6;
+  --blue:#219EBC;
+  --darkBlue:#1967D2;;
+  --yellow:#FFB703 ;
+  --orange:#FB8500 ;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+}
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App
+{
+  width: 100%;
+}
+

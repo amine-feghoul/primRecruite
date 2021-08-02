@@ -1,0 +1,166 @@
+.navbar-container
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 70px;
+}
+.navbar-wrapper
+{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-links
+{
+    height: 100%;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links
+{   
+    width: 100%;
+    height: 80%;
+    list-style-type: none;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center ;
+}
+
+.nav-link
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in 250ms;
+}
+.nav-link-u-line
+{
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--darkBlue);
+    transition: all 250ms ease-in;
+}
+.nav-link:hover 
+{
+    color: var(--darkBlue);
+    cursor: pointer;
+}
+.nav-link:hover .nav-link-u-line
+{
+    width: 100%;
+}
+
+.fa-bars
+{
+    display: none;
+}
+#nav-sign-up-btn
+{
+    border-radius: 10px;
+    border: 2px solid var(--darkBlue);
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--darkBlue);
+    font-weight: bold;
+    transition: all 250ms ease-in;
+}
+
+#nav-sign-up-btn:hover
+{
+    
+    font-weight: bold;
+    color: var(--darkBlue);
+    background-color: white;
+    cursor: pointer ;
+}
+
+@media screen and (max-width:850px) {
+    .navbar-links
+    {
+        flex-basis: 70%;
+    }
+
+}
+@media screen and (max-width:650px) {
+    
+    .fa-bars{
+        display: block;
+    }
+    .nav-links
+    {
+        position: absolute;
+        top: 70px;
+        width: 0%;
+        background-color: white;
+        right: 0;
+        flex-direction: column;
+        
+        transition: width 250ms ease;
+    }
+    .nav-link
+    {
+        display: none;
+    }
+    .active
+    {
+        display: flex;
+        width: 50%    ;
+    }
+    .active li 
+    {
+        display: flex;
+        height: fit-content;
+        padding: 20px 0px;
+        transition: display 300ms ease;
+    }
+
+    #nav-sign-up-btn
+{
+    border-radius: 10px;
+
+ 
+    height: fit-content;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: none;
+    background-color: var(--darkBlue);
+    font-weight: bold;
+    transition: all 100ms ease-in;
+}
+.active #nav-sign-up-btn
+{
+    display: flex;
+    width: fit-content;
+}
+     
+
+
+
+#nav-sign-up-btn:hover
+{
+    
+    font-weight: bold;
+    color: var(--darkBlue);
+    background-color: white;
+    cursor: pointer ;
+}
+}
